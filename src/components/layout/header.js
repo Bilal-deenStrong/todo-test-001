@@ -1,26 +1,27 @@
 import React from 'react';
+import styled from 'styled-components';
 
-const headerStyleH1 = {
-    textAlign: 'center',
-    background: '#333',
-    color: '#fff',
-    padding: '10px'
-}
+const H1 = styled.h1`
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+`
 
-const headerStyleH5 = {
-    textAlign: 'right',
-    background: 'black',
-    color: 'white',
-    padding: '5px'
-
-}
-
+const H5 = styled.h5`
+    text-align: right;
+    background: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+`
 function Header() {
     return (
         <header>
 
-            <h1 style={headerStyleH1}>To-Do List Web App</h1>
-            <h5 style={headerStyleH5}>By Bilal Sher</h5>
+            <H1>To-Do List Web App</H1>
+            <H5>By Bilal Sher</H5>
 
         </header>
     )
